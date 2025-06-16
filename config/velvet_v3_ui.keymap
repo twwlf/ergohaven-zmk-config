@@ -30,6 +30,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        lmb {
+            bindings = <&mkp MB1>;
+            key-positions = <39 38>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
