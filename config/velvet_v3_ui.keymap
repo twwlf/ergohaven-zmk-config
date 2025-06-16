@@ -35,10 +35,10 @@
 
         Base {
             bindings = <
-&kp TAB    &kp Q    &kp W        &kp E     &kp R     &kp T                              &kp Y  &kp U  &kp I      &kp O     &kp P      &kp BSPC
-&kp LCTRL  &kp A    &kp S        &kp D     &kp F     &kp G                              &kp H  &kp J  &kp K      &kp L     &kp SEMI   &kp SQT
-&kp LSHFT  &lt 4 Z  &kp X        &kp C     &kp V     &kp B                              &kp N  &kp M  &kp COMMA  &kp DOT   &kp SLASH  &kp RSHFT
-                    &lt 5 GRAVE  &kp LALT  &kp LGUI  &ms_t 1 MB1  &kp SPACE    &kp RET  &mo 2  &none  &kp LBKT   &kp RBKT
+&kp TAB    &kp Q  &kp W        &kp E     &kp R     &kp T                              &kp Y  &kp U  &kp I      &kp O     &kp P      &kp BSPC
+&kp LCTRL  &kp A  &kp S        &kp D     &kp F     &kp G                              &kp H  &kp J  &kp K      &kp L     &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z  &kp X        &kp C     &kp V     &kp B                              &kp N  &kp M  &kp COMMA  &kp DOT   &kp SLASH  &kp RSHFT
+                  &lt 5 GRAVE  &kp LALT  &kp LGUI  &ms_t 1 MB1  &kp SPACE    &kp RET  &mo 2  &none  &kp LBKT   &kp RBKT
             >;
 
             display-name = "Base";
@@ -46,10 +46,10 @@
 
         Navigation {
             bindings = <
-&trans   &trans    &kp RU_N7     &kp N8        &kp N9        &kp N0                       &trans    &kp LC(LS(TAB))  &kp LG(SPACE)         &kp LC(TAB)           &kp MINUS      &kp EQUAL
-&kp ESC  &kp BSPC  &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp RET                      &kp LEFT  &kp DOWN_ARROW   &kp UP                &kp RIGHT             &kp LA(SPACE)  &trans
-&trans   &trans    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DEL                      &kp HOME  &kp PG_DN        &kp PG_UP             &kp END               &trans         &trans
-                   &trans        &kp N0        &trans        &trans   &trans    &kp BSPC  &mo 3     &trans           &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))
+&trans   &trans     &kp RU_N7     &kp N8        &kp N9        &kp N0                       &trans    &kp LC(LS(TAB))  &kp LG(SPACE)         &kp LC(TAB)           &kp MINUS      &kp EQUAL
+&kp ESC  &kp BSPC   &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp RET                      &kp LEFT  &kp DOWN_ARROW   &kp UP                &kp RIGHT             &kp LA(SPACE)  &trans
+&trans   &mkp LCLK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DEL                      &kp HOME  &kp PG_DN        &kp PG_UP             &kp END               &trans         &trans
+                    &trans        &kp N0        &trans        &trans   &trans    &kp BSPC  &mo 3     &trans           &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))
             >;
 
             display-name = "Navigation";
