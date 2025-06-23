@@ -78,7 +78,7 @@
             bindings = <
 &trans  &kp UNDER  &kp AMPERSAND  &kp ASTRK  &kp LPAR   &kp RPAR                      &kp CARET         &kp AMPS  &kp UNDER  &kp SQT   &trans             &trans
 &trans  &kp COLON  &kp DOLLAR     &kp PRCNT  &kp CARET  &kp PLUS                      &kp LEFT_BRACKET  &kp LBRC  &kp MINUS  &kp RBRC  &kp RIGHT_BRACKET  &trans
-&trans  &kp TILDE  &kp EXCL       &kp AT     &kp HASH   &kp PIPE                      &trans            &kp PIPE  &trans     &trans    &trans             &trans
+&trans  &kp TILDE  &kp EXCL       &kp AT     &kp HASH   &kp PIPE                      &trans            &trans    &trans     &trans    &trans             &trans
                    &trans         &kp RPAR   &trans     &mo 3     &kp BSPC    &trans  &trans            &trans    &trans     &trans
             >;
 
