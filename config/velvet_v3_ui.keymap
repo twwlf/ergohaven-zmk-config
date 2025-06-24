@@ -29,6 +29,34 @@
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
         };
+
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <16 15 14 13>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            hold-trigger-on-release;
+        };
+
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <19 20 21 22>;
+        };
     };
 
     combos {
@@ -55,10 +83,10 @@
 
         Base {
             bindings = <
-&kp TAB    &kp Q  &kp W      &kp E     &kp R     &kp T                                  &kp Y        &kp U  &kp I          &kp O      &kp P      &kp BSPC
-&kp LCTRL  &kp A  &kp S      &kp D     &kp F     &kp G                                  &kp H        &kp J  &kp K          &kp L      &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z  &kp X      &kp C     &kp V     &kp B                                  &kp N        &kp M  &kp COMMA      &kp DOT    &kp SLASH  &kp RSHFT
-                  &kp GRAVE  &kp LALT  &kp LGUI  &ms_t 1 MB1  &lt 5 SPACE    &kp ENTER  &ms_t 2 MB1  &none  &kp RIGHT_ALT  &kp RCTRL
+&kp TAB    &kp Q         &kp W            &kp E            &kp R              &kp T                                  &kp Y        &kp U               &kp I          &kp O        &kp P            &kp BSPC
+&kp LCTRL  &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G                                  &kp H        &hmr RIGHT_SHIFT J  &hmr RGUI K    &hmr RALT L  &hmr RCTRL SEMI  &kp SQT
+&kp LSHFT  &kp Z         &kp X            &kp C            &kp V              &kp B                                  &kp N        &kp M               &kp COMMA      &kp DOT      &kp SLASH        &kp RSHFT
+                         &kp GRAVE        &kp LALT         &kp LGUI           &ms_t 1 MB1  &lt 5 SPACE    &kp ENTER  &ms_t 2 MB1  &none               &kp RIGHT_ALT  &kp RCTRL
             >;
 
             display-name = "Base";
