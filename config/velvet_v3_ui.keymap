@@ -76,8 +76,8 @@
 
         Symbols {
             bindings = <
-&trans  &kp PRCNT  &kp DOLLAR  &kp HASH  &kp AT_SIGN  &kp EXCL                      &kp CARET         &kp AMPS           &kp ASTRK      &kp LPAR          &kp RPAR   &trans
-&trans  &none      &none       &kp PLUS  &kp UNDER    &none                         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none          &none             &kp COLON  &kp DQT
+&trans  &kp PRCNT  &kp DOLLAR  &kp HASH  &kp AT_SIGN  &kp BSLH                      &kp CARET         &kp AMPS           &kp ASTRK      &kp LPAR          &kp RPAR   &trans
+&trans  &none      &none       &kp PLUS  &kp UNDER    &kp EXCL                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none          &none             &kp COLON  &kp DQT
 &trans  &none      &none       &none     &none        &kp PIPE                      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LESS_THAN  &kp GREATER_THAN  &kp QMARK  &trans
                    &kp TILDE   &trans    &trans       &mo 3     &kp BSPC    &trans  &trans            &trans             &trans         &trans
             >;
