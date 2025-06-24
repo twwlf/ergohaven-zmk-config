@@ -27,6 +27,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            flavor = "hold-preferred";
         };
     };
 
@@ -65,10 +66,10 @@
 
         Navigation {
             bindings = <
-&trans   &kp NUMBER_5  &kp NUMBER_4  &kp N3     &kp NUMBER_2  &kp NUMBER_1                       &kp N6     &kp N7          &kp N8                &kp N9                &kp N0  &trans
-&kp ESC  &none         &none         &kp EQUAL  &kp MINUS     &kp LG(SPACE)                      &kp LEFT   &kp DOWN_ARROW  &kp UP                &kp RIGHT             &trans  &trans
-&trans   &none         &none         &kp LG(C)  &kp LG(V)     &kp BSLH                           &kp PG_UP  &kp PG_DN       &trans                &trans                &trans  &trans
-                       &trans        &trans     &trans        &trans         &trans    &kp BSPC  &mo 3      &trans          &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))
+&kp GRAVE  &kp NUMBER_5  &kp NUMBER_4  &kp N3     &kp NUMBER_2  &kp NUMBER_1                       &kp N6     &kp N7          &kp N8                &kp N9                &kp N0  &trans
+&kp ESC    &none         &none         &kp EQUAL  &kp MINUS     &kp LG(SPACE)                      &kp LEFT   &kp DOWN_ARROW  &kp UP                &kp RIGHT             &trans  &trans
+&trans     &none         &none         &kp LG(C)  &kp LG(V)     &kp BSLH                           &kp PG_UP  &kp PG_DN       &trans                &trans                &trans  &trans
+                         &trans        &trans     &trans        &trans         &trans    &kp BSPC  &mo 3      &trans          &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))
             >;
 
             display-name = "Navigation";
@@ -76,10 +77,10 @@
 
         Symbols {
             bindings = <
-&trans  &kp PRCNT  &kp DOLLAR  &kp HASH  &kp AT_SIGN  &kp BSLH                      &kp CARET         &kp AMPS           &kp ASTRK      &kp LPAR          &kp RPAR   &trans
-&trans  &none      &none       &kp PLUS  &kp UNDER    &kp EXCL                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none          &none             &kp COLON  &kp DQT
-&trans  &none      &none       &none     &none        &kp PIPE                      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LESS_THAN  &kp GREATER_THAN  &kp QMARK  &trans
-                   &kp TILDE   &trans    &trans       &mo 3     &kp BSPC    &trans  &trans            &trans             &trans         &trans
+&kp TILDE  &kp PRCNT  &kp DOLLAR  &kp HASH  &kp AT_SIGN  &kp BSLH                      &kp CARET         &kp AMPS           &kp ASTRK      &kp LPAR          &kp RPAR   &trans
+&trans     &none      &none       &kp PLUS  &kp UNDER    &kp EXCL                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none          &none             &kp COLON  &kp DQT
+&trans     &none      &none       &none     &none        &kp PIPE                      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LESS_THAN  &kp GREATER_THAN  &kp QMARK  &trans
+                      &kp TILDE   &trans    &trans       &mo 3     &kp BSPC    &trans  &trans            &trans             &trans         &trans
             >;
 
             display-name = "Symbols";
