@@ -154,10 +154,10 @@
 
         Launch {
             bindings = <
-&none  &none  &none    &kp F13  &kp F16  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &kp F17  &kp F18  &kp F19  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none    &kp F20  &kp F21  &none                  &none  &none  &none  &none  &none  &none
-              &none    &none    &none    &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none    &kp F13  &kp F16  &none                  &none  &kp LG(LS(NUMBER_4))      &kp LG(LS(NUMBER_3))      &none  &none  &none
+&none  &none  &kp F17  &kp F18  &kp F19  &none                  &none  &kp LG(LC(LS(NUMBER_4)))  &kp LG(LC(LS(NUMBER_3)))  &none  &none  &none
+&none  &none  &none    &kp F20  &kp F21  &none                  &none  &none                     &none                     &none  &none  &none
+              &none    &none    &none    &none  &none    &none  &none  &none                     &none                     &none
             >;
 
             display-name = "User0";
