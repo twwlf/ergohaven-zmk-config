@@ -67,6 +67,11 @@
             key-positions = <39 38>;
             layers = <0>;
         };
+
+        scroll {
+            bindings = <&mo 5>;
+            key-positions = <40 39>;
+        };
     };
 
     macros {
