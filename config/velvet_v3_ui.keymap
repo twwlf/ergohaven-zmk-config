@@ -97,10 +97,10 @@
 
         Symbols {
             bindings = <
-&none   &kp EXCL   &kp AT       &kp HASH   &kp DOLLAR  &kp BSLH                                 &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &trans
-&trans  &kp GRAVE  &kp PERCENT  &kp MINUS  &kp EQUAL   &kp LBKT                                 &kp RBKT   &sk LSHFT  &sk LGUI   &sk LALT  &sk LCTRL  &trans
-&trans  &none      &none        &kp SEMI   &kp SQT     &kp LEFT_BRACE                           &kp RBRC   &kp PIPE   &trans     &trans    &trans     &trans
-                   &trans       &trans     &trans      &mo 3           &kp LG(SPACE)    &trans  &trans     &trans     &trans     &trans
+&none   &kp EXCL   &kp AT       &kp HASH   &kp DOLLAR  &kp BSLH                          &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &trans
+&trans  &kp GRAVE  &kp PERCENT  &kp MINUS  &kp EQUAL   &kp LBKT                          &kp RBKT   &sk LSHFT  &sk LGUI   &sk LALT  &sk LCTRL  &kp SQT
+&trans  &none      &none        &kp SEMI   &kp SQT     &kp LEFT_BRACE                    &kp RBRC   &kp PIPE   &kp COMMA  &kp DOT   &kp FSLH   &trans
+                   &trans       &trans     &trans      &mo 1           &trans    &trans  &trans     &trans     &trans     &trans
             >;
 
             display-name = "Symbols";
