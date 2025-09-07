@@ -96,10 +96,10 @@
 
         nav {
             bindings = <
-&trans     &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                           &kp N6         &kp N7          &kp N8  &kp N9     &kp N0  &trans
-&kp GLOBE  &sk LCTRL  &sk LALT  &sk LSHFT  &sk LGUI   &kp ESC                          &kp LEFT       &kp DOWN_ARROW  &kp UP  &kp RIGHT  &trans  &none
-&none      &none      &none     &kp LG(C)  &kp LG(V)  &kp LG(SPACE)                    &kp BACKSPACE  &kp PG_DN       &trans  &trans     &trans  &none
-                      &trans    &trans     &trans     &trans         &trans    &trans  &mo 3          &none           &trans  &trans
+&trans      &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                           &kp N6         &kp N7          &kp N8  &kp N9     &kp N0  &trans
+&sys_reset  &sk LCTRL  &sk LALT  &sk LSHFT  &sk LGUI   &kp ESC                          &kp LEFT       &kp DOWN_ARROW  &kp UP  &kp RIGHT  &trans  &none
+&none       &none      &none     &kp LG(C)  &kp LG(V)  &kp LG(SPACE)                    &kp BACKSPACE  &kp PG_DN       &trans  &trans     &trans  &none
+                       &trans    &trans     &trans     &trans         &trans    &trans  &mo 3          &none           &trans  &trans
             >;
 
             display-name = "Navigation";
@@ -108,7 +108,7 @@
         sym {
             bindings = <
 &trans  &kp EXCL   &kp AT       &kp HASH   &kp DOLLAR  &kp BSLH                    &kp CARET      &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR   &trans
-&trans  &kp GRAVE  &kp PERCENT  &kp MINUS  &kp EQUAL   &kp LBKT                    &kp RBKT       &sk RGUI  &sk LSHFT  &sk RALT  &sk RCTRL  &kp GLOBE
+&trans  &kp GRAVE  &kp PERCENT  &kp MINUS  &kp EQUAL   &kp LBKT                    &kp RBKT       &sk RGUI  &sk LSHFT  &sk RALT  &sk RCTRL  &sys_reset
 &trans  &none      &none        &none      &none       &kp SQT                     &kp BACKSPACE  &kp PIPE  &kp COMMA  &kp DOT   &kp FSLH   &trans
                    &trans       &trans     &trans      &mo 3     &trans    &trans  &trans         &trans    &trans     &trans
             >;
