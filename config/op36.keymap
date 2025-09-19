@@ -94,7 +94,7 @@
             bindings = <
   &kp EXCL   &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp BACKSLASH                              &kp CARET          &kp AMPERSAND  &kp ASTRK      &kp LPAR          &kp RPAR
   &kp GRAVE  &kp PRCNT    &kp MINUS  &kp EQUAL   &kp LEFT_BRACKET                           &kp RIGHT_BRACKET  &sk LGUI       &sk LSHFT      &sk LALT          &sk RCTRL
-  &kp TILDE  &none        &kp COLON  &kp FSLH    &kp SQT                                    &kp BACKSPACE      &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN  &kp QMARK
+  &kp TILDE  &none        &kp COLON  &kp PIPE    &kp SQT                                    &kp BACKSPACE      &kp COLON      &kp LESS_THAN  &kp GREATER_THAN  &kp QMARK
                                      &trans      &mo 3             &kp LC(SPACE)    &trans  &trans             &trans
             >;
 
