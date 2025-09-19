@@ -109,7 +109,7 @@
             bindings = <
 &trans  &kp EXCL   &kp AT       &kp HASH   &kp DOLLAR  &kp BSLH                    &kp CARET      &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR   &trans
 &trans  &kp GRAVE  &kp PERCENT  &kp MINUS  &kp EQUAL   &kp LBKT                    &kp RBKT       &sk RGUI  &sk LSHFT  &sk RALT  &sk RCTRL  &sys_reset
-&trans  &none      &none        &none      &none       &kp SQT                     &kp BACKSPACE  &kp PIPE  &kp COMMA  &kp DOT   &kp FSLH   &trans
+&trans  &none      &none        &kp COLON  &none       &kp SQT                     &kp BACKSPACE  &kp PIPE  &kp COMMA  &kp DOT   &kp FSLH   &trans
                    &trans       &trans     &trans      &mo 3     &trans    &trans  &trans         &trans    &trans     &trans
             >;
 
