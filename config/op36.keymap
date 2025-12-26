@@ -29,7 +29,7 @@
         compatible = "zmk,combos";
 
         game-toggle {
-            bindings = <&tog 5>;
+            bindings = <&tog 1>;
             key-positions = <16 17 18 19>;
         };
     };
@@ -42,10 +42,22 @@
   &kp Q        &kp W       &kp E         &kp R       &kp T                          &kp Y  &kp U       &kp I         &kp O       &kp P
   &mt LCTRL A  &mt LALT S  &mt LSHIFT D  &mt LGUI F  &kp G                          &kp H  &mt RGUI J  &mt RSHIFT K  &mt RALT L  &mt RCTRL SEMI
   &kp Z        &kp X       &kp C         &kp V       &kp B                          &kp N  &kp M       &kp COMMA     &kp DOT     &kp FSLH
-                                         &kp LGUI    &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
+                                         &kp LGUI    &mo 2  &kp SPACE    &kp ENTER  &mo 3  &kp TAB
             >;
 
             display-name = "Base";
+        };
+
+        game {
+            display-name = "Base";
+            bindings = <
+  &kp Q  &kp W  &kp E  &kp R     &kp T                          &kp Y  &kp U    &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D  &kp F     &kp G                          &kp H  &kp J    &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X  &kp C  &kp V     &kp B                          &kp N  &kp M    &kp COMMA  &kp DOT  &kp FSLH
+                       &kp LGUI  &mo 2  &kp SPACE    &kp ENTER  &mo 3  &kp TAB
+            >;
+
+            label = "game";
         };
 
         nav {
@@ -64,7 +76,7 @@
   &kp EXCL   &kp AT_SIGN  &kp HASH   &kp DOLLAR        &kp BACKSLASH                        &kp CARET      &kp AMPERSAND  &kp ASTRK      &kp LPAR          &kp RPAR
   &kp GRAVE  &kp PRCNT    &kp MINUS  &kp EQUAL         &kp LEFT_BRACKET                     &kp COLON      &sk RGUI       &sk LSHFT      &sk RALT          &sk RCTRL
   &kp TILDE  &none        &none      &kp SINGLE_QUOTE  &kp RIGHT_BRACKET                    &kp LC(SPACE)  &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN  &kp QMARK
-                                     &kp TAB           &mo 3              &trans    &trans  &trans         &trans
+                                     &kp TAB           &mo 4              &trans    &trans  &trans         &trans
             >;
 
             display-name = "Symbols";
@@ -88,18 +100,6 @@
   &none                  &none                  &none                  &none                  &none                                  &none                  &none                  &none                  &none                  &none
                                                                        &none                  &none                  &none    &none  &kp LC(SPACE)          &none
             >;
-        };
-
-        game {
-            display-name = "Base";
-            bindings = <
-  &kp Q  &kp W  &kp E  &kp R     &kp T                          &kp Y  &kp U    &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &kp F     &kp G                          &kp H  &kp J    &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X  &kp C  &kp V     &kp B                          &kp N  &kp M    &kp COMMA  &kp DOT  &kp FSLH
-                       &kp LGUI  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
-            >;
-
-            label = "game";
         };
     };
 };
