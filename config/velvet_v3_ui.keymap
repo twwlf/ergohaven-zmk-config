@@ -53,7 +53,7 @@
         compatible = "zmk,combos";
 
         game-toggle {
-            bindings = <&tog 1>;
+            bindings = <&tog 0>;
             key-positions = <19 20 21 22>;
         };
     };
@@ -72,31 +72,21 @@
 
         base {
             bindings = <
-&kp TAB    &kp Q        &kp W       &kp E        &kp R       &kp T                          &kp Y  &kp U       &kp I        &kp O       &kp P           &kp BSPC
-&kp LCTRL  &mt LCTRL A  &mt LALT S  &mt LSHFT D  &mt LGUI F  &kp G                          &kp H  &mt RGUI J  &mt RSHFT K  &mt RALT L  &mt RCTRL SEMI  &kp RCTRL
-&kp LSHFT  &kp Z        &kp X       &kp C        &kp V       &kp B                          &kp N  &kp M       &kp COMMA    &kp DOT     &kp FSLH        &kp RSHFT
-                        &mo 5       &mkp MB1     &mo 8       &mo 2  &kp SPACE    &kp ENTER  &mo 3  &none       &mkp MB1     &mkp MB2
-            >;
-
-            display-name = "Base";
-        };
-
-        game {
-            display-name = "Base";
-            bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T                          &kp Y  &kp U  &kp I      &kp O     &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F     &kp G                          &kp H  &kp J  &kp K      &kp L     &kp SEMI  &kp RCTRL
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F     &kp G                          &kp H  &kp J  &kp K      &kp L     &kp SEMI  &kp RET
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V     &kp B                          &kp N  &kp M  &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                  &mo 5  &mkp MB1  &kp LGUI  &mo 2  &kp SPACE    &kp ENTER  &mo 3  &none  &mkp MB1   &mkp MB2
+                  &mo 5  &mkp MB1  &kp LGUI  &mo 1  &kp SPACE    &kp LSHFT  &mo 2  &none  &mkp MB1   &mkp MB2
             >;
+
+            display-name = "Base";
         };
 
         nav {
             bindings = <
-&trans  &kp N1      &kp N2    &kp N3     &kp N4     &kp N5                           &kp N6         &kp N7          &kp N8  &kp N9     &kp N0  &trans
-&none   &sk LCTRL   &sk LALT  &sk LSHFT  &sk LGUI   &kp ESC                          &kp LEFT       &kp DOWN_ARROW  &kp UP  &kp RIGHT  &trans  &none
-&none   &caps_word  &none     &kp LG(C)  &kp LG(V)  &kp LG(SPACE)                    &kp BACKSPACE  &kp PG_DN       &trans  &trans     &trans  &none
-                    &trans    &trans     &trans     &trans         &trans    &trans  &kp LC(SPACE)  &none           &trans  &trans
+&trans  &kp N1      &kp N2    &kp N3     &kp N4     &kp N5                              &kp N6         &kp N7          &kp N8  &kp N9     &kp N0  &trans
+&none   &sk LCTRL   &sk LALT  &sk LSHFT  &sk LGUI   &kp ESC                             &kp LEFT       &kp DOWN_ARROW  &kp UP  &kp RIGHT  &trans  &none
+&none   &caps_word  &none     &kp LG(C)  &kp LG(V)  &kp LG(SPACE)                       &kp BACKSPACE  &kp PG_DN       &trans  &trans     &trans  &none
+                    &trans    &trans     &trans     &trans         &trans    &kp ENTER  &kp LC(SPACE)  &none           &trans  &trans
             >;
 
             display-name = "Navigation";
@@ -107,7 +97,7 @@
 &trans  &kp EXCL   &kp AT       &kp HASH   &kp DOLLAR  &kp BSLH                             &kp CARET      &kp AMPS  &kp ASTRK      &kp LPAR          &kp RPAR      &trans
 &trans  &kp GRAVE  &kp PERCENT  &kp MINUS  &kp EQUAL   &kp LBKT                             &kp COLON      &sk RGUI  &sk LSHFT      &sk RALT          &sk RCTRL     &trans
 &trans  &kp TILDE  &none        &none      &kp SQT     &kp RIGHT_BRACKET                    &kp LC(SPACE)  &kp PIPE  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
-                   &trans       &trans     &kp TAB     &mo 4              &trans    &trans  &trans         &trans    &trans         &trans
+                   &trans       &trans     &kp TAB     &mo 3              &trans    &trans  &trans         &trans    &trans         &trans
             >;
 
             display-name = "Symbols";
@@ -122,6 +112,17 @@
             >;
 
             display-name = "Adjust";
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &mo 5   &mkp MB3  &mkp MB2  &mkp MB1  &mo 6                     &mo 6   &mkp MB1  &mkp MB2  &mkp MB3  &mo 5   &trans
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
+            >;
+
+            display-name = "Mouse";
         };
 
         scroll {
@@ -144,17 +145,6 @@
             >;
 
             display-name = "Sniper";
-        };
-
-        mouse {
-            bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &mo 5   &mkp MB3  &mkp MB2  &mkp MB1  &mo 6                     &mo 6   &mkp MB1  &mkp MB2  &mkp MB3  &mo 5   &trans
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
-            >;
-
-            display-name = "Mouse";
         };
 
         shortcut {
