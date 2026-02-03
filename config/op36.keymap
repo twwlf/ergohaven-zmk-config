@@ -36,7 +36,7 @@
             bindings = <
   &kp EXCL   &kp AT_SIGN  &kp HASH   &kp DOLLAR        &kp BACKSLASH                           &kp CARET  &kp AMPERSAND  &kp ASTRK      &kp LPAR          &kp RPAR
   &kp GRAVE  &kp PRCNT    &kp MINUS  &kp EQUAL         &kp LEFT_BRACKET                        &kp COLON  &sk RGUI       &sk LSHFT      &sk LALT          &sk RCTRL
-  &kp TILDE  &none        &none      &kp SINGLE_QUOTE  &kp RIGHT_BRACKET                       &kp SEMI   &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN  &kp QMARK
+  &kp TILDE  &none        &kp UNDER  &kp SINGLE_QUOTE  &kp RIGHT_BRACKET                       &kp SEMI   &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN  &kp QMARK
                                      &kp TAB           &kp LC(SPACE)      &kp SPACE    &trans  &trans     &trans
             >;
 
