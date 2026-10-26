@@ -76,9 +76,9 @@
 
         msym {
             bindings = <
-  &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTRK    &kp LPAR   &kp RIGHT_BRACE                               &trans  &trans    &trans     &trans    &trans
-  &kp DQT         &kp DOLLAR     &kp PRCNT    &kp CARET  &kp PLUS                                      &trans  &kp RGUI  &kp RSHFT  &kp RALT  &kp RCTRL
-  &kp TILDE       &kp EXCL       &kp AT_SIGN  &kp HASH   &kp BSLH                                      &trans  &trans    &trans     &trans    &trans
+  &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTRK    &kp LPAR   &kp RIGHT_BRACE                               &trans  &kp LC(LS(TAB))  &kp LC(TAB)  &trans    &trans
+  &kp DQT         &kp DOLLAR     &kp PRCNT    &kp CARET  &kp PLUS                                      &trans  &kp RGUI         &kp RSHFT    &kp RALT  &kp RCTRL
+  &kp TILDE       &kp EXCL       &kp AT_SIGN  &kp HASH   &kp PIPE                                      &trans  &trans           &trans       &trans    &trans
                                               &kp LPAR   &kp RPAR         &kp RU_UNDERSCORE    &trans  &trans  &trans
             >;
         };
