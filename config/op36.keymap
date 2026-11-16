@@ -24,6 +24,30 @@
             key-positions = <30 31>;
             layers = <0>;
         };
+
+        lgui {
+            bindings = <&sk LGUI>;
+            key-positions = <13 31>;
+            layers = <0>;
+        };
+
+        lctrl {
+            bindings = <&sk LCTRL>;
+            key-positions = <31 10>;
+            layers = <0>;
+        };
+
+        rgui {
+            bindings = <&sk RGUI>;
+            key-positions = <34 16>;
+            layers = <0>;
+        };
+
+        rctrl {
+            bindings = <&sk RCTRL>;
+            key-positions = <34 19>;
+            layers = <0>;
+        };
     };
 
     behaviors {
