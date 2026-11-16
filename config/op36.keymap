@@ -13,26 +13,14 @@
     combos {
         compatible = "zmk,combos";
 
-        lshift {
-            bindings = <&kp LSHFT>;
-            key-positions = <10 20>;
-            layers = <0>;
-        };
-
-        rshift {
-            bindings = <&kp RSHFT>;
-            key-positions = <19 29>;
-            layers = <0>;
-        };
-
-        rcmd {
-            bindings = <&kp RCMD>;
+        fun {
+            bindings = <&mo 4>;
             key-positions = <34 35>;
             layers = <0>;
         };
 
-        lcmd {
-            bindings = <&kp LCMD>;
+        media {
+            bindings = <&mo 5>;
             key-positions = <30 31>;
             layers = <0>;
         };
@@ -74,10 +62,10 @@
         mbase {
             display-name = "Base";
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R      &kp T                            &kp Y  &kp U      &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &kp F      &kp G                            &kp H  &kp J      &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X  &kp C  &kp V      &kp B                            &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH
-                       &lt 5 ESC  &mo 1  &kp SPACE    &lt 3 ENTER  &mo 2  &lt 4 TAB
+  &kp Q  &kp W  &kp E  &kp R           &kp T                            &kp Y  &kp U           &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D  &kp F           &kp G                            &kp H  &kp J           &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X  &kp C  &kp V           &kp B                            &kp N  &kp M           &kp COMMA  &kp DOT  &kp FSLH
+                       &mt LSHIFT ESC  &mo 1  &kp SPACE    &lt 3 ENTER  &mo 2  &mt RSHIFT TAB
             >;
         };
 
