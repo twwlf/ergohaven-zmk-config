@@ -118,7 +118,7 @@
         numr {
             bindings = <
   &none      &none     &none      &none     &kp LC(SPACE)                      &kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT
-  &sk LCTRL  &sk LALT  &sk LSHFT  &sk LGUI  &none                              &kp BSLH   &kp N4  &kp N5  &kp N6  &kp SQT
+  &sk LCTRL  &sk LALT  &sk LSHFT  &sk LGUI  &kp ESC                            &kp BSLH   &kp N4  &kp N5  &kp N6  &kp SQT
   &none      &none     &none      &none     &kp LG(SPACE)                      &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp EQUAL
                                   &none     &none          &none    &kp MINUS  &kp N9     &kp N0
             >;
