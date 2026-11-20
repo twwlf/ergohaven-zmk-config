@@ -23,10 +23,10 @@
         nav {
             display-name = "nav";
             bindings = <
-  &none         &none     &none      &none     &kp LC(SPACE)                      &kp HOME        &kp PG_DN   &kp PG_UP  &kp END          &kp INS
-  &sk LCTRL     &sk LALT  &sk LSHFT  &sk LGUI  &kp ESC                            &kp LEFT_ARROW  &kp DOWN    &kp UP     &kp RIGHT_ARROW  &trans
-  &out OUT_TOG  &none     &none      &none     &kp LG(SPACE)                      &kp BACKSPACE   &kp DELETE  &trans     &trans           &trans
-                                     &mo 3     &trans         &none    &kp ENTER  &kp LC(SPACE)   &kp TAB
+  &none         &kp LC(LS(TAB))  &kp LC(TAB)  &none     &kp LC(SPACE)                      &kp HOME        &kp PG_DN   &kp PG_UP  &kp END          &kp INS
+  &sk LCTRL     &sk LALT         &sk LSHFT    &sk LGUI  &kp ESC                            &kp LEFT_ARROW  &kp DOWN    &kp UP     &kp RIGHT_ARROW  &trans
+  &out OUT_TOG  &none            &none        &none     &kp LG(SPACE)                      &kp BACKSPACE   &kp DELETE  &trans     &trans           &trans
+                                              &mo 3     &trans         &none    &kp ENTER  &kp LC(SPACE)   &kp TAB
             >;
         };
 
